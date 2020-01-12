@@ -5,12 +5,3 @@ Picture.deleteMany({}).then(() => {
     console.log(programsArray);
   });
 });
-
-// const countryData = data.map(item => {
-//     const country = {}
-//     country.name = item.name
-//     country.capital = item.capital
-//     country.region = item.region
-//     country.population = item.population
-//     return country
-// })
