@@ -8,7 +8,8 @@ if (process.env.NODE_ENV === "production") {
   mongoURI = "mongodb://localhost/nasa_db";
 }
 mongoose.connect(mongoURI, {
-  useNewUrlParser: true
+  useNewUrlParser: true,
+  useUnifiedTopology: true
 });
 
 module.exports = mongoose;

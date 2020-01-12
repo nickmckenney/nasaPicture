@@ -6,12 +6,5 @@ const url =
 fetch(url)
   .then(res => res.json())
   .then(res => {
-    let countries = JSON.stringify(res);
-    fs.writeFile("./db/data.json", countries, err => {
-      if (err) {
-        console.log(err);
-      } else {
-        console.log("success");
-      }
-    });
+    console.log(res);
   });
